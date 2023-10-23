@@ -11,20 +11,16 @@ const books = [
   },
 ];
 
-const Book = ({ id, title, author }) => {
+const Book = ({ title, author }) => {
+  const getBook = () => {
+    const book = books.find((book) => book.title === title);
+    console.log(book);
+  };
   return (
-    <div>
-      <ul>
-        <li>
-          <a href="#">{id}</a>
-        </li>
-        <li>
-          <a href="#">{title}</a>
-        </li>
-        <li>
-          <a href="#">{author}</a>
-        </li>
-      </ul>
+    <div style={{ marginBottom: '20px', backgroundColor: '#333333' }}>
+      <p>{title}</p>
+      <p>{author}</p>
+      <button onClick={getBook}>Klik me</button>
     </div>
   );
 };
@@ -33,7 +29,7 @@ const App = () => {
   return (
     <div>
       {books.map((book) => {
-        return <Book {...book} asd="234" key={book.id} />;
+        return <Book {...book} key={book.id} />;
       })}
     </div>
   );
