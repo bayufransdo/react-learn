@@ -1,9 +1,8 @@
-function App() {
-  return (
-    <div className='container'>
-      <h2>Advanced React</h2>
-    </div>
-  );
-}
+import { useState } from 'react';
 
+const App = () => {
+  const [state, setState] = useState('aasd');
+  console.log(setState);
+  return <div className="container"></div>;
+};
 export default App;
