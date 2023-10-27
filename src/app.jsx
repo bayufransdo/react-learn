@@ -1,10 +1,11 @@
-import Starter from './tutorial/03-conditional-rendering/starter/06-toggle-challenge';
-import Final from './tutorial/03-conditional-rendering/final/06-toggle-challenge';
+import Starter from './tutorial/06-forms/starter/02-user-challenge';
+import Final from './tutorial/06-forms/final/02-user-challenge';
 
 const App = () => {
   return (
     <div className="container">
       <Starter />
+      <br />
       <hr />
       <br />
       <Final />

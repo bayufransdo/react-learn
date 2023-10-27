@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 const Alert = () => {
-  return <div className="alert">Alert</div>;
+  return <div className="alert alert-danger">Alert</div>;
 };
 
 const ToggleChallenge = () => {
